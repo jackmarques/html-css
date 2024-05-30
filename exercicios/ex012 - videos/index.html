@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu prórpio servidor.</p>
+
+    <video src="midia/meu-video.mp4" width="250" controls></video> <!-- forma número 1 de adicionar vídeos -->
+
+    <video width="200" poster="imagens/fita.png" controls loop>
+        <source src="midia/meu-video.mp4" type="video/mp4"> <!-- SCR põe o arquivo que deseja inserir e TYPE videos/o formato do arquivo-->
+        <!-- vai inserindo mais SOURCES em ordem (decrescente) a medida que houve mais formatos -->
+    </video> <!-- forma número 2 de adicionar vídeos -->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/t3WZIL_VwYg?si=_FYkWyeK02zD82vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- é mais recomendado inserir vídeos que não estejam em seu servidor -->
+</body>
+</html>

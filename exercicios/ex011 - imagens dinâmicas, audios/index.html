@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- caso a foto seja seja menor que 1050px, o nagevagor irá carregar a foto M -->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <!-- na tag PICTURE a base será sempre a imagem padrão (a maior de prefência) que vc pretende carregar. Acima dela vai colocando os SOURCES na ordem (decrescente EX.: g, m, p)-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/ludmila-destilado.mp3" controls></audio> <!-- forma número 1 de adicionar áudio-->
+    <audio preload="metadata">
+        <source src="midia/ludmila-destilado.mp3" type="audio/mpeg"> <!-- forma número 2 de adicionar áudio -->
+    </audio>
+</body>
+</html>
